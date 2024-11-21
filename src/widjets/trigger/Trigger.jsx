@@ -1,5 +1,6 @@
 import { Button, Flex } from "antd";
 import { motion } from "framer-motion";
+import { NavLink } from "react-router-dom";
 
 const Trigger = () => {
   return (
@@ -35,9 +36,14 @@ const Trigger = () => {
           Также предусмотрена функция подогрева, чтобы предотвратить образование
           льда.
         </p>
-        <Button size="large" className="mt-10 bg-primary text-white py-6 px-10">
-          Подробне....
-        </Button>
+        <NavLink to={'/about'}>
+          <Button
+            size="large"
+            className="mt-10 bg-primary text-white py-6 px-10"
+          >
+            Подробне....
+          </Button>
+        </NavLink>
       </motion.div>
     </Flex>
   );
