@@ -1,6 +1,7 @@
-import React from 'react';
-import {  Route, Routes} from 'react-router-dom';
-import Home from './pages/Home/Home';
+
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home/Home";
 import About from './pages/About/About';
 
 
@@ -14,4 +15,3 @@ const App = () => {
 };
 
 export default App;
-
