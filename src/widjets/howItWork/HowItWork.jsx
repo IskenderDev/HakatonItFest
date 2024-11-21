@@ -1,6 +1,7 @@
 import { Button, Flex } from "antd";
 import React from "react";
 import { motion } from "framer-motion"; // Импортируем motion
+import { NavLink } from "react-router-dom";
 
 const HowItWork = () => {
   return (
@@ -23,9 +24,14 @@ const HowItWork = () => {
           15 минут. Если водитель не успевает приехать вовремя, бронирование
           аннулируется, и средства не возвращаются.
         </p>
-        <Button size="large" className="mt-10 bg-primary text-white py-6 px-10">
-          Подробне....
-        </Button>
+        <NavLink to='/about'>
+          <Button
+            size="large"
+            className="mt-10 bg-primary text-white py-6 px-10"
+          >
+            Подробне....
+          </Button>
+        </NavLink>
       </motion.div>
       <motion.div
         className="shadow-2xl w-[200%]"
