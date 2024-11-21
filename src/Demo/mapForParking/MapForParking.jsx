@@ -26,7 +26,9 @@ const ModalWin = ({ onClose, onConfirm }) => {
             Бронь
           </button>
         </div>
-        <div className="flex items-center justify-center mt-4 text-red-600">00:15</div>
+        <div className="flex items-center justify-center mt-4 text-red-600">
+          00:15
+        </div>
       </div>
     </div>
   );
@@ -85,17 +87,18 @@ const MapForParking = () => {
           <div className="flex justify-between align-center flex-row p-4 bg-slate-600 w-[400px] h-[650px]">
             <div className="flex flex-col items-end justify-start gap-6 mt-5 w-[100px]">
               {parkingLot.slice(0, 8).map((color, index) => (
-                <>
+                <React.Fragment key={`left-${index}`}>
                   <div className="w-[100px] h-[3px] bg-white -rotate-12"></div>
                   <div
-                    key={`left-${index}`}
-                    className={`w-[7px] h-[7px] bg-${color}-600 mb-[15px]`}
+                    className={`w-[7px] h-[7px] ${
+                      color === "green" ? "bg-green-600" : "bg-red-600"
+                    } mb-[15px]`}
                     onClick={() => handleSlotClick(index)}
                     style={{
                       cursor: color === "green" ? "pointer" : "not-allowed",
                     }}
                   ></div>
-                </>
+                </React.Fragment>
               ))}
               <div className="w-[100px] h-[3px] bg-white -rotate-12"></div>
             </div>
@@ -114,17 +117,18 @@ const MapForParking = () => {
             <div className="w-[2px] bg-white"></div>
             <div className="flex flex-col items-start justify-start gap-6 mt-5 w-[100px]">
               {parkingLot.slice(7).map((color, index) => (
-                <>
+                <React.Fragment key={`right-${index}`}>
                   <div className="w-[100px] h-[3px] bg-white -rotate-12"></div>
                   <div
-                    key={`right-${index}`}
-                    className={`w-[7px] h-[7px] bg-${color}-600 mt-[15px]`}
+                    className={`w-[7px] h-[7px] ${
+                      color === "green" ? "bg-green-600" : "bg-red-600"
+                    } mt-[15px]`}
                     onClick={() => handleSlotClick(index + 7)}
                     style={{
                       cursor: color === "green" ? "pointer" : "not-allowed",
                     }}
                   ></div>
-                </>
+                </React.Fragment>
               ))}
               <div className="w-[100px] h-[3px] bg-white -rotate-12"></div>
             </div>
