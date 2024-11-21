@@ -1,10 +1,10 @@
 import React from 'react'
-import Map from './map/Map'
+import MapForParking from './mapForParking/MapForParking'
 
 const Demo = () => {
   return (
     <>
-      <Map/>
+      <MapForParking/>
     </>
   )
 }
