@@ -1,25 +1,14 @@
-import { Button } from "antd";
-<<<<<<< HEAD
-import Trigger from "./widjets/trigger/Trigger";
-=======
-import Header from './widjets/header/Header'
->>>>>>> dde68e5aa4cc1d7ecdb76879cbd7061e10a6302f
+import React from 'react';
+import {  Route, Routes} from 'react-router-dom';
+import Home from './pages/Home/Home';
 
-export default function App() {
+const App = () => {
   return (
-    <>
-<<<<<<< HEAD
-    <Trigger/>
-    </>
+    <Routes>
+        <Route path="/" element={<Home />} />
+        {/* <Route path="/detail" element={About} /> */}
+    </Routes>
   );
-}
-=======
-    <h1 className="text-3xl text-pink-500">
-      Hello world !
-    </h1>
-    <Button/>
-    <Header />
-    </>
-  )
-}
->>>>>>> dde68e5aa4cc1d7ecdb76879cbd7061e10a6302f
+};
+
+export default App;
