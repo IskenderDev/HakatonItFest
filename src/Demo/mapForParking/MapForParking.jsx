@@ -4,9 +4,14 @@ const ModalWin = ({ onClose, onConfirm }) => {
   return (
     <div className="w-[420px] fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
       <div className="bg-white w-[400px] p-4 rounded shadow-lg">
-        <p className="text-lg font-bold mb-2">Вы действительно хотите забронировать парковку?</p>
+        <p className="text-lg font-bold mb-2">
+          Вы действительно хотите забронировать парковку?
+        </p>
         <p className="mb-4">Порковка стоит 25 сомов на бронь!</p>
-        <p className="mb-4">Вы должны успеть за 15 минут, иначе место будет отдан другим. Согласны?</p>
+        <p className="mb-4">
+          Вы должны успеть за 15 минут, иначе место будет отдан другим.
+          Согласны?
+        </p>
         <div className="flex justify-between">
           <button
             className="px-4 py-2 bg-gray-400 text-white rounded hover:bg-gray-500"
@@ -39,7 +44,7 @@ const MapForParking = () => {
     "green",
     "green",
     "red",
-    "red",
+    "green",
     "green",
     "green",
     "red",
@@ -114,7 +119,7 @@ const MapForParking = () => {
                   <div
                     key={`right-${index}`}
                     className={`w-[7px] h-[7px] bg-${color}-600 mt-[15px]`}
-                    onClick={() => handleSlotClick(index + 8)}
+                    onClick={() => handleSlotClick(index + 7)}
                     style={{
                       cursor: color === "green" ? "pointer" : "not-allowed",
                     }}
@@ -129,6 +134,5 @@ const MapForParking = () => {
     </div>
   );
 };
-  
 
 export default MapForParking;
