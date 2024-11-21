@@ -134,5 +134,6 @@ const MapForParking = () => {
     </div>
   );
 };
+  
 
 export default MapForParking;
