@@ -1,9 +1,11 @@
 import React from 'react'
-import Login from './logIn/LogIn'
+import Map from './map/Map'
 
 const Demo = () => {
   return (
-    <Login/>
+    <>
+      <Map/>
+    </>
   )
 }
 

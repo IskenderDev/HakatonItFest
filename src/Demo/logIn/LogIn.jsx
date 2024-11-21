@@ -12,9 +12,6 @@ const Login = () => {
     console.log("localStorage:", username);
   };
 
-  const onFinishFailed = (errorInfo) => {
-    console.log("Ошибка:", errorInfo);
-  };
 
   const handleUsernameChange = (e) => {
     const value = e.target.value.trim();
@@ -28,7 +25,6 @@ const Login = () => {
         name="login"
         initialValues={{ remember: true }}
         onFinish={onFinish}
-        onFinishFailed={onFinishFailed}
         layout="vertical"
       >
         <Form.Item

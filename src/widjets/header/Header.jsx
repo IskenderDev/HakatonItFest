@@ -22,7 +22,7 @@ const Header = () => {
               <NavLink to="/about">О проекте</NavLink>
             </li>
           </ul>
-          <NavLink to='/demo'>
+          <NavLink to='/log-in'>
             <Button size="large" className="bg-primary text-white py-6 px-10">
               Посмотреть Демо
             </Button>

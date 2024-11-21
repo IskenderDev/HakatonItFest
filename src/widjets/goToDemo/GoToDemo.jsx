@@ -10,7 +10,7 @@ const GoToDemo = () => {
           Остановись с умом, паркуйся с комфортом — забудь о стрессах на дороге
           и всегда находи место для своей машины с помощью умной парковки!
         </p>
-        <NavLink to="/demo">
+        <NavLink to="/log-in">
           <Button
             size="large"
             className="text-3xl py-9 px-12 text-primary font-bold"

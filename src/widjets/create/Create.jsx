@@ -17,7 +17,7 @@ const Create = () => {
             реальном времени, что позволяет избежать длительных поисков
             свободных мест.
           </p>
-          <NavLink to='/demo'>
+          <NavLink to='/log-in'>
             <Button
               size="large"
               className="bg-primary w-[250px] text-white py-6 px-10"
