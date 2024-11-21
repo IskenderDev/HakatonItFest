@@ -1,5 +1,6 @@
 import { Button } from "antd";
 import Header from './widjets/header/Header'
+import Footer from './widjets/footer/Footer'
 
 export default function App() {
   return (
@@ -9,6 +10,7 @@ export default function App() {
     </h1>
     <Button/>
     <Header />
+    <Footer />
     </>
   )
 }
