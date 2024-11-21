@@ -7,10 +7,12 @@ const ModalWin = ({ onClose, onConfirm }) => {
         <p className="text-lg font-bold mb-2">
           Вы действительно хотите забронировать парковку?
         </p>
-        <p className="mb-4">Порковка стоит 25 сомов на бронь!</p>
         <p className="mb-4">
-          Вы должны успеть за 15 минут, иначе место будет отдан другим.
-          Согласны?
+          Данная услуга стоит - <span className="text-red-500">50 сом</span>
+        </p>
+        <p className="mb-4">
+          Вы должны успеть за 15 минут, иначе ваша бронь будет аннулировано без
+          возмещение средств!
         </p>
         <div className="flex justify-between">
           <button
@@ -73,17 +75,16 @@ const MapForParking = () => {
   };
 
   return (
-    <div>
+    <div className="flex justify-center items-center">
       {isModalOpen && (
         <ModalWin
           onClose={() => setIsModalOpen(false)}
           onConfirm={handleConfirm}
         />
       )}
-      <div className="w-[420px] flex justify-center align-center">
-        <div className="flex align-center justify-center flex-col">
-          <h1>Parking</h1>
-          <div className="flex justify-between align-center flex-row p-4 bg-slate-600 w-[400px] h-[650px]">
+      <div className="w-[420px] flex justify-center items-center mt-20">
+        <div className="flex items-center justify-center flex-col">
+          <div className="flex justify-between flex-row p-4 bg-slate-600 w-[400px] h-[650px]">
             <div className="flex flex-col items-end justify-start gap-6 mt-5 w-[100px]">
               {parkingLot.slice(0, 8).map((color, index) => (
                 <React.Fragment key={`left-${index}`}>
