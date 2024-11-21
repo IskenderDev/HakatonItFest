@@ -44,7 +44,7 @@ const MapForParking = () => {
     "green",
     "green",
     "red",
-    "red",
+    "green",
     "green",
     "green",
     "red",
