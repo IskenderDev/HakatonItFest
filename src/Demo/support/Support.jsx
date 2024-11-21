@@ -32,6 +32,14 @@ const Support = () => {
           </div>
         </div>
       </div>
+      <div className="p-8 bg-[#E8EDF1] h-[77%]">
+        <div className="h-[115px] shadow-lg bg-white p-7 flex items-center justify-between gap-5 rounded-lg h">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-message-circle"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+          <div className="flex flex-col">
+            <p className="text-lg text-primary">+996 555 555 555</p>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
