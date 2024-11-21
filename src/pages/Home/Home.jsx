@@ -12,7 +12,7 @@ const Home = () => {
     <>
       <Header />
       <Create />
-      <div className="flex flex-col gap-36 items-center">
+      <div className="flex flex-col gap-36 items-center my-36">
         <HowItWork />
         <Trigger />
         <Video />

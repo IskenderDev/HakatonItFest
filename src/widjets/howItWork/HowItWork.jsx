@@ -1,6 +1,6 @@
 import { Button, Flex } from "antd";
 import React from "react";
-import { motion } from "framer-motion"; // Импортируем motion
+import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 
 const HowItWork = () => {
@@ -10,9 +10,9 @@ const HowItWork = () => {
       gap={"100px"}
     >
       <motion.div
-        initial={{ opacity: 0, x: 100 }} // Начальное состояние: прозрачность 0 и сдвиг вправо
-        animate={{ opacity: 1, x: 0 }} // Конечное состояние: прозрачность 1 и сдвиг на 0
-        transition={{ duration: 3 }} // Время анимации
+        initial={{ opacity: 0, x: 100 }} 
+        animate={{ opacity: 1, x: 0 }} 
+        transition={{ duration: 3 }} 
       >
         <h2 className="text-primary font-extrabold text-4xl mt-10">
           Как это работает
@@ -35,9 +35,9 @@ const HowItWork = () => {
       </motion.div>
       <motion.div
         className="shadow-2xl w-[200%]"
-        initial={{ opacity: 0, x: 100 }} // Начальное состояние: прозрачность 0 и сдвиг вправо
-        animate={{ opacity: 1, x: 0 }} // Конечное состояние: прозрачность 1 и сдвиг на 0
-        transition={{ duration: 3 }} // Время анимации
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 3,}} 
       >
         <img
           className="rounded-xl w-full h-auto"

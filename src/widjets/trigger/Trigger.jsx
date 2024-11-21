@@ -10,9 +10,9 @@ const Trigger = () => {
     >
       <motion.div
         className="shadow-2xl w-[110%]"
-        initial={{ x: -200, opacity: 0 }} // начальное положение и прозрачность
-        animate={{ x: 0, opacity: 1 }} // финальное положение
-        transition={{ duration: 3 }} // время анимации
+        initial={{ x: -200, opacity: 0 }} 
+        animate={{ x: 0, opacity: 1 }} 
+        transition={{ duration: 3 }} 
       >
         <img
           className="rounded-xl w-full"
@@ -21,9 +21,9 @@ const Trigger = () => {
         />
       </motion.div>
       <motion.div
-        initial={{ x: -200, opacity: 0 }} // начальное положение и прозрачность
-        animate={{ x: 0, opacity: 1 }} // финальное положение
-        transition={{ duration: 3 }} // время анимации
+        initial={{ x: -200, opacity: 0 }} 
+        animate={{ x: 0, opacity: 1 }} 
+        transition={{ duration: 3,}} 
       >
         <h2 className="text-primary font-extrabold text-4xl mt-10">
           Работа датчика

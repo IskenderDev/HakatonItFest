@@ -12,21 +12,11 @@ const Footer = () => {
     transition: "opacity 3s ease-in-out, transform 3s ease-in-out",
   });
 
-  useEffect(() => {
-    // Запуск анимации через 0.5 секунды
-    setTimeout(() => {
-      setStyle({
-        opacity: 1,
-        transform: "translateY(0)",
-        transition: "opacity 3s ease-in-out, transform 3s ease-in-out",
-      });
-    }, 100);
-  }, []);
+
 
   return (
     <footer
-      style={style}
-      className="bg-primary text-white py-10 mt-8 flex justify-center"
+      className="bg-primary text-white py-10 pt-16 flex justify-center"
     >
       <div className="container max-w-[1200px] px-4">
         <div className="flex justify-between">

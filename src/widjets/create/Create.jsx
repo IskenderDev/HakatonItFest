@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "antd";
+import { NavLink } from "react-router-dom";
 
 const Create = () => {
   return (
@@ -16,12 +17,14 @@ const Create = () => {
             реальном времени, что позволяет избежать длительных поисков
             свободных мест.
           </p>
-          <Button
-            size="large"
-            className="bg-primary w-[250px] text-white py-6 px-10"
-          >
-            Посмотреть Демо
-          </Button>
+          <NavLink to='/demo'>
+            <Button
+              size="large"
+              className="bg-primary w-[250px] text-white py-6 px-10"
+            >
+              Посмотреть Демо
+            </Button>
+          </NavLink>
         </div>
         <div className="w-[300px] ">
           <iframe

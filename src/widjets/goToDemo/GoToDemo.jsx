@@ -1,5 +1,6 @@
 import { Button } from "antd";
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const GoToDemo = () => {
   return (
@@ -9,12 +10,14 @@ const GoToDemo = () => {
           Остановись с умом, паркуйся с комфортом — забудь о стрессах на дороге
           и всегда находи место для своей машины с помощью умной парковки!
         </p>
-        <Button
-          size="large"
-          className="text-3xl py-9 px-12 text-primary font-bold"
-        >
-          Посмотреть демо
-        </Button>
+        <NavLink to="/demo">
+          <Button
+            size="large"
+            className="text-3xl py-9 px-12 text-primary font-bold"
+          >
+            Посмотреть демо
+          </Button>
+        </NavLink>
       </div>
     </div>
   );
