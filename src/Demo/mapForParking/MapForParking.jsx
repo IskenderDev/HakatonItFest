@@ -2,34 +2,36 @@ import React, { useState } from "react";
 
 const ModalWin = ({ onClose, onConfirm }) => {
   return (
-    <div className="w-[420px] fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-      <div className="bg-white w-[400px] p-4 rounded shadow-lg">
-        <p className="text-lg font-bold mb-2">
-          Вы действительно хотите забронировать парковку?
-        </p>
-        <p className="mb-4">
-          Данная услуга стоит - <span className="text-red-500">50 сом</span>
-        </p>
-        <p className="mb-4">
-          Вы должны успеть за 15 минут, иначе ваша бронь будет аннулировано без
-          возмещение средств!
-        </p>
-        <div className="flex justify-between">
-          <button
-            className="px-4 py-2 bg-gray-400 text-white rounded hover:bg-gray-500"
-            onClick={onClose}
-          >
-            Отмена
-          </button>
-          <button
-            className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-700"
-            onClick={onConfirm}
-          >
-            Бронь
-          </button>
-        </div>
-        <div className="flex items-center justify-center mt-4 text-red-600">
-          00:15
+    <div className="flex justify-center fixed items-center inset-0 bg-black bg-opacity-50 z-50">
+      <div className="w-[420px]flex items-center justify-center">
+        <div className="bg-white w-[400px] p-4 rounded shadow-lg">
+          <p className="text-lg font-bold mb-2">
+            Вы действительно хотите забронировать парковку?
+          </p>
+          <p className="mb-4">
+            Данная услуга стоит - <span className="text-red-500">50 сом</span>
+          </p>
+          <p className="mb-4">
+            Вы должны успеть за 15 минут, иначе ваша бронь будет аннулировано
+            без возмещение средств!
+          </p>
+          <div className="flex justify-between">
+            <button
+              className="px-4 py-2 bg-gray-400 text-white rounded hover:bg-gray-500"
+              onClick={onClose}
+            >
+              Отмена
+            </button>
+            <button
+              className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-700"
+              onClick={onConfirm}
+            >
+              Бронь
+            </button>
+          </div>
+          <div className="flex items-center justify-center mt-4 text-red-600">
+            00:15
+          </div>
         </div>
       </div>
     </div>
