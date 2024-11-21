@@ -1,18 +1,26 @@
-import React from 'react'
-import HowItWork from '../../widjets/howItWork/HowItWork'
-import Trigger from '../../widjets/trigger/Trigger'
-import Video from '../../widjets/Video/Video'
-import GoToDemo from '../../widjets/goToDemo/GoToDemo'
+import React from "react";
+import Header from "../../widjets/header/Header";
+import Create from "../../widjets/create/Create";
+import HowItWork from "../../widjets/howItWork/HowItWork";
+import Trigger from "../../widjets/trigger/Trigger";
+import Video from "../../widjets/Video/Video";
+import GoToDemo from "../../widjets/goToDemo/GoToDemo";
+import Footer from "../../widjets/footer/Footer";
 
 const Home = () => {
   return (
-    <div className="flex flex-col gap-36 items-center">
+    <>
+      <Header />
+      <Create />
+      <div className="flex flex-col gap-36 items-center">
         <HowItWork />
         <Trigger />
         <Video />
-        <GoToDemo />
-    </div>
-  )
-}
+      </div>
+      <GoToDemo />
+      <Footer />
+    </>
+  );
+};
 
-export default Home
+export default Home;
